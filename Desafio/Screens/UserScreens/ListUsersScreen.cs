@@ -18,10 +18,10 @@ namespace Blog.Screens.UserScreens
 
         private static void List()
         {
-            var repository = new Repository<Tag>(Database.Connection);
-            var tags = repository.Get();
-            foreach (var item in tags)
-                Console.WriteLine($"{item.Id} - {item.Name} ({item.Slug})");
+            var repository = new Repository<User>(Database.Connection);
+            var users = repository.Get();
+            foreach (var item in users)
+                Console.WriteLine($"{item.Id} - {item.Name} ({item.Email})");
         }
     }
 }

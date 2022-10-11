@@ -11,7 +11,7 @@ namespace Blog.Screens.UserScreens
             Console.Clear();
             Console.WriteLine("Excluir um Usuário");
             Console.WriteLine("-------------");
-            Console.Write("Qual o id do Usuário que deseja excluir? ");
+            Console.Write("Qual o Id do Usuário que deseja excluir? ");
             var id = Console.ReadLine();
 
             Delete(int.Parse(id));
@@ -23,7 +23,7 @@ namespace Blog.Screens.UserScreens
         {
             try
             {
-                var repository = new Repository<Tag>(Database.Connection);
+                var repository = new Repository<User>(Database.Connection);
                 repository.Delete(id);
                 Console.WriteLine("Usuário excluído com sucesso!");
             }

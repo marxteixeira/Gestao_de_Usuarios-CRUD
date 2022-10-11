@@ -1,12 +1,13 @@
 ﻿using System;
 using Blog.Screens.TagScreens;
+using Blog.Screens.UserScreens;
 using Microsoft.Data.SqlClient;
 
 namespace Blog
 {
     class Program
     {
-        private const string CONNECTION_STRING = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=1q2w3e4r@#$";
+        private const string CONNECTION_STRING = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=marx123!@#;Trusted_Connection=False; TrustServerCertificate=True";
 
         static void Main(string[] args)
         {
@@ -26,12 +27,12 @@ namespace Blog
             Console.WriteLine("-----------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
-            Console.WriteLine("1 - Gestão de usuário");
-            Console.WriteLine("2 - Gestão de perfil");
-            Console.WriteLine("3 - Gestão de categoria");
-            Console.WriteLine("4 - Gestão de tag");
-            Console.WriteLine("5 - Vincular perfil/usuário");
-            Console.WriteLine("6 - Vincular post/tag");
+            Console.WriteLine("1 - Gestão de Usuário");
+            Console.WriteLine("2 - Gestão de Perfil");
+            Console.WriteLine("3 - Gestão de Categoria");
+            Console.WriteLine("4 - Gestão de Tag");
+            Console.WriteLine("5 - Vincular Perfil/Usuário");
+            Console.WriteLine("6 - Vincular Post/Tag");
             Console.WriteLine("7 - Relatórios");
             Console.WriteLine();
             Console.WriteLine();
@@ -40,25 +41,25 @@ namespace Blog
             switch (option)
             {
                 case 1:
-                    MenuTagScreen.Load();
+                    MenuUserScreens.Load();
                     break;
                 case 2:
-                    MenuTagScreen.Load();
+                    //MenuRoleScreen.Load();
                     break;
                 case 3:
-                    MenuTagScreen.Load();
+                    //MenuCategoryScreen.Load();
                     break;
                 case 4:
                     MenuTagScreen.Load();
                     break;
                 case 5:
-                    MenuTagScreen.Load();
+                    //MenuRoleUserScreen.Load();
                     break;
                 case 6:
-                    MenuTagScreen.Load();
+                    //MenuPostTagScreen.Load();
                     break;
                 case 7:
-                    MenuTagScreen.Load();
+                    //MenuRelatoriosScreen.Load();
                     break;
                 default: Load(); break;
             }

@@ -7,7 +7,7 @@ namespace Blog.Screens.UserScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de Users");
+            Console.WriteLine("Gestão de Usuários");
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();

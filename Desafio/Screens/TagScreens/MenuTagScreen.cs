@@ -7,14 +7,14 @@ namespace Blog.Screens.TagScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de tags");
+            Console.WriteLine("Gestão de Tags");
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
-            Console.WriteLine("1 - Listar tags");
-            Console.WriteLine("2 - Cadastrar tags");
-            Console.WriteLine("3 - Atualizar tag");
-            Console.WriteLine("4 - Excluir tag");
+            Console.WriteLine("1 - Listar Tags");
+            Console.WriteLine("2 - Cadastrar Tags");
+            Console.WriteLine("3 - Atualizar Tag");
+            Console.WriteLine("4 - Excluir Tag");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine());

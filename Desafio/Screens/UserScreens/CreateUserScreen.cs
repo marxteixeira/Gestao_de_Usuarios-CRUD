@@ -14,24 +14,40 @@ namespace Blog.Screens.UserScreens
             Console.Write("Nome: ");
             var name = Console.ReadLine();
 
+            Console.Write("Email: ");
+            var email = Console.ReadLine();
+
+            Console.Write("PasswordHash: ");
+            var pass = Console.ReadLine();
+
+            Console.Write("Bio: ");
+            var bio = Console.ReadLine();
+
+            Console.Write("Image: ");
+            var image = Console.ReadLine();
+
             Console.Write("Slug: ");
             var slug = Console.ReadLine();
 
-            Create(new Tag
+            Create(new User
             {
                 Name = name,
-                Slug = slug
+                Email = email,
+                PasswordHash = pass,
+                Bio = bio,
+                Image = image,
+                Slug = slug,
             });
             Console.ReadKey();
             MenuUserScreens.Load();
         }
 
-        public static void Create(Tag tag)
+        public static void Create(User user)
         {
             try
             {
-                var repository = new Repository<Tag>(Database.Connection);
-                repository.Create(tag);
+                var repository = new Repository<User>(Database.Connection);
+                repository.Create(user);
                 Console.WriteLine("Usuário cadastrado com sucesso!");
             }
             catch (Exception ex)

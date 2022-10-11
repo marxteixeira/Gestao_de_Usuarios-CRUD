@@ -9,7 +9,7 @@ namespace Blog.Screens.UserScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Atualizando uma tag");
+            Console.WriteLine("Atualizando um Usuário");
             Console.WriteLine("-------------");
             Console.Write("Id: ");
             var id = Console.ReadLine();
@@ -17,30 +17,46 @@ namespace Blog.Screens.UserScreens
             Console.Write("Nome: ");
             var name = Console.ReadLine();
 
+            Console.Write("Email: ");
+            var email = Console.ReadLine();
+
+            Console.Write("PasswordHash: ");
+            var pass = Console.ReadLine();
+
+            Console.Write("Bio: ");
+            var bio = Console.ReadLine();
+
+            Console.Write("Image: ");
+            var image = Console.ReadLine();
+
             Console.Write("Slug: ");
             var slug = Console.ReadLine();
 
-            Update(new Tag
+            Update(new User
             {
                 Id = int.Parse(id),
                 Name = name,
-                Slug = slug
+                Email = email,
+                PasswordHash = pass,
+                Bio = bio,
+                Image = image,
+                Slug = slug,
             });
             Console.ReadKey();
             MenuUserScreens.Load();
         }
 
-        public static void Update(Tag tag)
+        public static void Update(User user)
         {
             try
             {
-                var repository = new Repository<Tag>(Database.Connection);
-                repository.Update(tag);
-                Console.WriteLine("Tag atualizada com sucesso!");
+                var repository = new Repository<User>(Database.Connection);
+                repository.Update(user);
+                Console.WriteLine("Usuário atualizado com sucesso!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Não foi possível atualizar a tag");
+                Console.WriteLine("Não foi possível atualizar o Usuário");
                 Console.WriteLine(ex.Message);
             }
         }
