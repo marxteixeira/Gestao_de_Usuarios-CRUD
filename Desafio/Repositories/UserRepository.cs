@@ -48,5 +48,20 @@ namespace Blog.Repositories
 
             return users;
         }
+
+        public void Create(int userId, int roleId)
+        {
+            var sql = @"INSERT INTO [UserRole] VALUES [@UserId, @RoleId]";
+
+            var AffectRows = _connection.Query(sql, new {UserId = userId, RoleId = roleId});
+            //Console.WriteLine($"{AffectRows}, linhas afetadas.");
+        }
+
+        public void Delete(int userId, int roleId)
+        {
+            var sql = @"DELETE FROM [UserRole] WHERE [UserId] = @userId AND [RoleId] = @roleId";
+
+            var row = _connection.Query(sql, new {UserId = userId, RoleId = roleId});
+        }
     }
 }

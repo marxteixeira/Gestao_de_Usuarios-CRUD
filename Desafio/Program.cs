@@ -3,6 +3,8 @@ using Blog.Screens.TagScreens;
 using Blog.Screens.UserScreens;
 using Blog.Screens.CategoryScreens;
 using Blog.Screens.RoleScreens;
+using Blog.Screens.UserRoleScreens;
+
 
 
 using Microsoft.Data.SqlClient;
@@ -36,8 +38,6 @@ namespace Blog
             Console.WriteLine("3 - Gestão de Categoria");
             Console.WriteLine("4 - Gestão de Tag");
             Console.WriteLine("5 - Vincular Perfil/Usuário");
-            Console.WriteLine("6 - Vincular Post/Tag");
-            Console.WriteLine("7 - Relatórios");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine()!);
@@ -57,13 +57,7 @@ namespace Blog
                     MenuTagScreen.Load();
                     break;
                 case 5:
-                    //MenuRoleUserScreen.Load();
-                    break;
-                case 6:
-                    //MenuPostTagScreen.Load();
-                    break;
-                case 7:
-                    //MenuRelatoriosScreen.Load();
+                    MenuUserRoleScreen.Load();
                     break;
                 default: Load(); break;
             }

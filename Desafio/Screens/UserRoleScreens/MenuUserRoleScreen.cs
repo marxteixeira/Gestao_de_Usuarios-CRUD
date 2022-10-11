@@ -1,20 +1,19 @@
 using System;
 
-namespace Blog.Screens.RoleUserScreens
+namespace Blog.Screens.UserRoleScreens
 {
-    public static class MenuRoleUserScreen
+    public static class MenuUserRoleScreen
     {
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de Tags");
+            Console.WriteLine("Gestão de Vínculos de Perfis com Usuário");
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
             Console.WriteLine("1 - Listar Perfil com Usuários");
             Console.WriteLine("2 - Cadastrar Vínculo");
-            Console.WriteLine("3 - Atualizar Vínculo");
-            Console.WriteLine("4 - Excluir Vínculo");
+            Console.WriteLine("3 - Excluir Vínculo");
             Console.WriteLine("0 - Voltar");
             Console.WriteLine();
             Console.WriteLine();
@@ -23,16 +22,13 @@ namespace Blog.Screens.RoleUserScreens
             switch (option)
             {
                 case 1:
-                    ListTagScreen.Load();
+                    ListUserRolesScreen.Load();
                     break;
                 case 2:
-                    CreateTagScreen.Load();
+                    CreateUserRoleScreen.Load();
                     break;
                 case 3:
-                    UpdateTagScreen.Load();
-                    break;
-                case 4:
-                    DeleteTagScreen.Load();
+                    DeleteUserRoleScreen.Load();
                     break;
                 case 0:
                     Program.Load();
