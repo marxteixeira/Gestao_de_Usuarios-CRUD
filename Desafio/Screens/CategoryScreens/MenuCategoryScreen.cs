@@ -1,20 +1,20 @@
 using System;
 
-namespace Blog.Screens.TagScreens
+namespace Blog.Screens.CategoryScreens
 {
-    public static class MenuTagScreen
+    public static class MenuCategoryScreen
     {
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de Tags");
+            Console.WriteLine("Gestão de Categorias");
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
-            Console.WriteLine("1 - Listar Tags");
-            Console.WriteLine("2 - Cadastrar Tags");
-            Console.WriteLine("3 - Atualizar Tag");
-            Console.WriteLine("4 - Excluir Tag");
+            Console.WriteLine("1 - Listar Categorias");
+            Console.WriteLine("2 - Cadastrar Categoria");
+            Console.WriteLine("3 - Atualizar Categoria");
+            Console.WriteLine("4 - Excluir Categoria");
             Console.WriteLine("0 - Voltar");
             Console.WriteLine();
             Console.WriteLine();
@@ -23,16 +23,16 @@ namespace Blog.Screens.TagScreens
             switch (option)
             {
                 case 1:
-                    ListTagScreen.Load();
+                    ListCategoryScreen.Load();
                     break;
                 case 2:
-                    CreateTagScreen.Load();
+                    CreateCategoryScreen.Load();
                     break;
                 case 3:
-                    UpdateTagScreen.Load();
+                    UpdateCategoryScreen.Load();
                     break;
                 case 4:
-                    DeleteTagScreen.Load();
+                    DeleteCategoryScreen.Load();
                     break;
                 case 0:
                     Program.Load();

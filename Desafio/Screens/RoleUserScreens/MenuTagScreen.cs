@@ -1,8 +1,8 @@
 using System;
 
-namespace Blog.Screens.TagScreens
+namespace Blog.Screens.RoleUserScreens
 {
-    public static class MenuTagScreen
+    public static class MenuRoleUserScreen
     {
         public static void Load()
         {
@@ -11,10 +11,10 @@ namespace Blog.Screens.TagScreens
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
-            Console.WriteLine("1 - Listar Tags");
-            Console.WriteLine("2 - Cadastrar Tags");
-            Console.WriteLine("3 - Atualizar Tag");
-            Console.WriteLine("4 - Excluir Tag");
+            Console.WriteLine("1 - Listar Perfil com Usuários");
+            Console.WriteLine("2 - Cadastrar Vínculo");
+            Console.WriteLine("3 - Atualizar Vínculo");
+            Console.WriteLine("4 - Excluir Vínculo");
             Console.WriteLine("0 - Voltar");
             Console.WriteLine();
             Console.WriteLine();

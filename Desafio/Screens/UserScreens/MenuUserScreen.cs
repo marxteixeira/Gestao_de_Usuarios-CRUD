@@ -15,6 +15,7 @@ namespace Blog.Screens.UserScreens
             Console.WriteLine("2 - Cadastrar Usuário");
             Console.WriteLine("3 - Atualizar Usuário");
             Console.WriteLine("4 - Excluir Usuário");
+            Console.WriteLine("0 - Voltar");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine());
@@ -32,6 +33,9 @@ namespace Blog.Screens.UserScreens
                     break;
                 case 4:
                     DeleteUserScreen.Load();
+                    break;
+                case 0:
+                    Program.Load();
                     break;
                 default: Load(); break;
             }

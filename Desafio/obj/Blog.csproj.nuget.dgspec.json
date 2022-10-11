@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marx\\CRUD-DataAccess\\CRUD-DataAccess\\Desafio\\Blog.csproj": {}
+    "C:\\Marx\\DataAccess\\CRUD-DataAccess\\Blog\\Blog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marx\\CRUD-DataAccess\\CRUD-DataAccess\\Desafio\\Blog.csproj": {
+    "C:\\Marx\\DataAccess\\CRUD-DataAccess\\Blog\\Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marx\\CRUD-DataAccess\\CRUD-DataAccess\\Desafio\\Blog.csproj",
+        "projectUniqueName": "C:\\Marx\\DataAccess\\CRUD-DataAccess\\Blog\\Blog.csproj",
         "projectName": "Blog",
-        "projectPath": "C:\\Users\\Marx\\CRUD-DataAccess\\CRUD-DataAccess\\Desafio\\Blog.csproj",
-        "packagesPath": "C:\\Users\\Marx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marx\\CRUD-DataAccess\\CRUD-DataAccess\\Desafio\\obj\\",
+        "projectPath": "C:\\Marx\\DataAccess\\CRUD-DataAccess\\Blog\\Blog.csproj",
+        "packagesPath": "C:\\Users\\mts6\\.nuget\\packages\\",
+        "outputPath": "C:\\Marx\\DataAccess\\CRUD-DataAccess\\Blog\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Marx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mts6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://artefatos.energisa.corp/artifactory/api/nuget/v3/nuget-hmg": {},
+          "https://artefatos.energisa.corp/artifactory/api/nuget/v3/nuget-prd": {}
         },
         "frameworks": {
           "net5.0": {
@@ -58,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

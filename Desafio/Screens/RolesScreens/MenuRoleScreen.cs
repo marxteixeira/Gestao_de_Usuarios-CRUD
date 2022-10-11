@@ -1,20 +1,20 @@
 using System;
 
-namespace Blog.Screens.TagScreens
+namespace Blog.Screens.RoleScreens
 {
-    public static class MenuTagScreen
+    public static class MenuRoleScreen
     {
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de Tags");
+            Console.WriteLine("Gestão de Perfis");
             Console.WriteLine("--------------");
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
-            Console.WriteLine("1 - Listar Tags");
-            Console.WriteLine("2 - Cadastrar Tags");
-            Console.WriteLine("3 - Atualizar Tag");
-            Console.WriteLine("4 - Excluir Tag");
+            Console.WriteLine("1 - Listar Perfis");
+            Console.WriteLine("2 - Cadastrar Perfil");
+            Console.WriteLine("3 - Atualizar Perfil");
+            Console.WriteLine("4 - Excluir Perfil");
             Console.WriteLine("0 - Voltar");
             Console.WriteLine();
             Console.WriteLine();
@@ -23,16 +23,16 @@ namespace Blog.Screens.TagScreens
             switch (option)
             {
                 case 1:
-                    ListTagScreen.Load();
+                    ListRolesScreen.Load();
                     break;
                 case 2:
-                    CreateTagScreen.Load();
+                    CreateRoleScreen.Load();
                     break;
                 case 3:
-                    UpdateTagScreen.Load();
+                    UpdateRoleScreen.Load();
                     break;
                 case 4:
-                    DeleteTagScreen.Load();
+                    DeleteRoleScreen.Load();
                     break;
                 case 0:
                     Program.Load();
