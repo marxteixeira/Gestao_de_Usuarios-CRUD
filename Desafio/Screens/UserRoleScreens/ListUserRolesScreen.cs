@@ -19,13 +19,13 @@ namespace Blog.Screens.UserRoleScreens
         private static void List()
         {
             var repository = new UserRepository(Database.Connection);
-            var roleUsers = repository.GetWithRoles();
-            foreach (var item in roleUsers)
+            var UserRoles = repository.GetWithRoles();
+            foreach (var item in UserRoles)
             {
                 Console.WriteLine($"{item.Name} :");
-                
-                foreach(var role in item.Roles)
-                    Console.WriteLine($"{role}");
+
+                foreach (var role in item.Roles)
+                    Console.WriteLine($"    {role.Name}");
 
             }
         }

@@ -23,13 +23,13 @@ namespace Blog.Screens.CategoryScreens
         {
             try
             {
-                var repository = new Repository<User>(Database.Connection);
+                var repository = new Repository<Category>(Database.Connection);
                 repository.Delete(id);
-                Console.WriteLine("Usuário excluído com sucesso!");
+                Console.WriteLine("Categoria excluída com sucesso!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Não foi possível excluir o Usuário");
+                Console.WriteLine("Não foi possível excluir a Categoria.");
                 Console.WriteLine(ex.Message);
             }
         }

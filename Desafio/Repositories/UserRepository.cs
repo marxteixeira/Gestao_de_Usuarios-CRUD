@@ -51,9 +51,9 @@ namespace Blog.Repositories
 
         public void Create(int userId, int roleId)
         {
-            var sql = @"INSERT INTO [UserRole] VALUES [@UserId, @RoleId]";
+            var sql = @"INSERT INTO [UserRole]([UserId],[RoleId]) VALUES (@userId, @roleId)";
 
-            var AffectRows = _connection.Query(sql, new {UserId = userId, RoleId = roleId});
+            var AffectRows = _connection.Query(sql, new { userId, roleId });
             //Console.WriteLine($"{AffectRows}, linhas afetadas.");
         }
 
@@ -61,7 +61,7 @@ namespace Blog.Repositories
         {
             var sql = @"DELETE FROM [UserRole] WHERE [UserId] = @userId AND [RoleId] = @roleId";
 
-            var row = _connection.Query(sql, new {UserId = userId, RoleId = roleId});
+            var row = _connection.Query(sql, new { UserId = userId, RoleId = roleId });
         }
     }
 }

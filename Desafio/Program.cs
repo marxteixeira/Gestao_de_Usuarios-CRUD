@@ -13,17 +13,17 @@ namespace Blog
 {
     class Program
     {
-        //private const string CONNECTION_STRING = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=marx123!@#;Trusted_Connection=False; TrustServerCertificate=True";
+        private const string CONNECTION_STRING = @"Server=localhost,1433;Database=Blog;User ID=sa;Password=marx123!@#;Trusted_Connection=False; TrustServerCertificate=True";
 
         static void Main(string[] args)
         {
-            //Database.Connection = new SqlConnection(CONNECTION_STRING);
-            //Database.Connection.Open();
+            Database.Connection = new SqlConnection(CONNECTION_STRING);
+            Database.Connection.Open();
 
             Load();
 
             Console.ReadKey();
-            //Database.Connection.Close();
+            Database.Connection.Close();
         }
 
         public static void Load()
@@ -47,7 +47,7 @@ namespace Blog
                 case 1:
                     MenuUserScreens.Load();
                     break;
-                case 2:                
+                case 2:
                     MenuRoleScreen.Load();
                     break;
                 case 3:
